@@ -1,0 +1,25 @@
+# Maven build files
+target/
+*.jar
+*.war
+*.ear
+
+# IDE files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# Maven Wrapper & cache
+.mvn/
+mvnw
+mvnw.cmd
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Logs
+*.log
