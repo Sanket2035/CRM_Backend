@@ -24,5 +24,5 @@ COPY --from=build /app/target/*.jar app.jar
 # Expose port
 EXPOSE 8080
 
-# Run the jar
+# Run the jar.
 ENTRYPOINT ["java", "-jar", "app.jar"]
