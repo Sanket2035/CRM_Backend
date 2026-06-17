@@ -10,7 +10,7 @@ import java.util.Date;
 
 public class SecurityUtility {
 
-    private static final String SECRET_KEY = "ApexCRM_Enterprise_Secure_Secret_Key_Signature";
+    private static final String SECRET_KEY = System.getenv().getOrDefault("JWT_SECRET", "ApexCRM_Enterprise_Secure_Secret_Key_Signature");
     private static final Algorithm ALGORITHM = Algorithm.HMAC256(SECRET_KEY);
     private static final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
